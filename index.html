@@ -1,57 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dimi Imports — Loja Oficial</title>
-  <meta name="description" content="Dimi Imports — Produtos selecionados em dropshipping: fitness, pets, cozinha e tecnologia. Frete grátis, garantia e pagamento seguro.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0f6cfd;--muted:#6b7280;--success:#10b981}
-    *{box-sizing:border-box}body{font-family:Inter,system-ui; margin:0;background:var(--bg);color:#0f172a}
-    .container{max-width:1150px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{height:46px;width:46px;background:linear-gradient(135deg,var(--accent),#6b22ff);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
-    .hero{background:linear-gradient(90deg,rgba(15,108,253,0.12),transparent);padding:32px;border-radius:12px;display:flex;gap:24px;align-items:center}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:22px}
-    .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;flex-direction:column}
-    footer{margin-top:40px;padding:28px 0;color:var(--muted);font-size:14px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimi Imports - Loja Oficial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">DI</div>
-        <div>
-          <div style="font-weight:700">Dimi Imports</div>
-          <div style="font-size:13px;color:var(--muted)">Produtos importados — entrega rápida e segura</div>
+
+<header>Dimi Imports</header>
+
+<section class="hero">
+    <h1>Bem-vindo à Dimi Imports</h1>
+    <p>Produtos de alta qualidade, envio rápido e preço imbatível!</p>
+</section>
+
+<h2>🔥 Produtos em Destaque</h2>
+
+<div class="grid">
+
+    <!-- PRODUTO 1 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61Vj0tRkC0L._AC_SL1500_.jpg">
+        <div class="card-body">
+            <h3>Relógio Smartwatch Série 8</h3>
+            <p class="price">R$ 149,90</p>
+            <a class="btn" href="#">Comprar Agora</a>
         </div>
-      </div>
-      <nav>
-        <a href="#colecao">Coleção</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+    </div>
 
-    <section class="hero">
-      <div>
-        <h1>Bem-vindo à Dimi Imports</h1>
-        <p>Produtos vencedores para vender hoje mesmo. Estoque ágil, envio internacional e suporte ao cliente.</p>
-      </div>
-    </section>
+    <!-- PRODUTO 2 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61kN1mRNRpL._AC_SL1500_.jpg">
+        <div class="card-body">
+            <h3>Fone Bluetooth Pro</h3>
+            <p class="price">R$ 79,90</p>
+            <a class="btn" href="#">Comprar Agora</a>
+        </div>
+    </div>
 
-    <section id="colecao">
-      <h2>Coleção de Produtos</h2>
-      <div class="grid" id="products-grid"></div>
-    </section>
+    <!-- PRODUTO 3 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61i1VQjchRL._AC_SL1500_.jpg">
+        <div class="card-body">
+            <h3>Mini Caixa de Som RGB</h3>
+            <p class="price">R$ 89,90</p>
+            <a class="btn" href="#">Comprar Agora</a>
+        </div>
+    </div>
 
-    <footer>
-      © Dimi Imports — Todos os direitos reservados
-    </footer>
-  </div>
+    <!-- PRODUTO 4 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61jX0v7NYLL._AC_SL1500_.jpg">
+        <div class="card-body">
+            <h3>Carregador Portátil 20.000mAh</h3>
+            <p class="price">R$ 129,90</p>
+            <a class="btn" href="#">Comprar Agora</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Dimi Imports — Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
